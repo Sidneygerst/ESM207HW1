@@ -1,0 +1,29 @@
+---
+title: "HW1"
+author: "Sidney Gerst"
+date: "April 9, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+
+
+```
+
+
+
+```{r}
+
+hw_data <- read_csv("HW1Data.csv") %>%
+  clean_names(. , case = "snake")
+
+
+```
+
